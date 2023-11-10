@@ -8,11 +8,34 @@ function sprendimas(x, y, direction, word) {
   if (direction == 1) {
     // horizontal
     for (let i = 0; i <= word.length - 1; i++) {
+      if (!outOfBounds(x, y + i)) {
+        nodes.push(letterFinder(x, y + i));
+      } else continue;
+    }
+  } else if (direction == 2) {
+    // vertical
+    for (let i = 0; i <= word.length - 1; i++) {
       if (!outOfBounds(x + i, y)) {
         nodes.push(letterFinder(x + i, y));
       } else continue;
-    } // vertical
+    }
+  } else if (direction == 3) {
+    // diagonal
+    for (let i = 0; i <= word.length - 1; i++) {
+      if (!outOfBounds(x + i, y +i)) {
+        nodes.push(letterFinder(x + i, y + i));
+      } else continue;
+    }
   }
+}
+
+function retrieveNodes(x, y, direction, word) {
+
+  for (let i = 0; i <= word.length - 1; i++) {
+    if (!outOfBounds(x + i, y)) {
+      nodes.push(letterFinder(x + i, y));
+    } else continue;
+  } // vertical
 }
 
 function letterFinder(x, y) {
@@ -29,9 +52,8 @@ function letterFinder(x, y) {
   );
 }
 
-// This assumes table is a square
-function outOfBounds(x, y, tableSize = 10) {
-  if (x <= tableSize && y <= tableSize && x > 0 && y > 0) {
+function outOfBounds(x, y, tableSizeX = 10, tableSizeY = 10) {
+  if (x <= tableSizeX && y <= tableSizeY && x > 0 && y > 0) {
     return false;
   } else {
     return true;
