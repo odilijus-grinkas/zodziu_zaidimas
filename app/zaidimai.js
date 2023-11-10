@@ -54,12 +54,12 @@ const animalsWordList = [
 
 function connecting(number) {
     const first = [
-        ["randomLetters", "wordList"]
-        ["randomLettersTwo", "animalWordList"]
+        [randomLetters, wordList],
+        [randomLettersTwo, animalsWordList]
     ];
     const second = [
-        ["randomLetters", "wordList"]
-        ["randomLettersTwo", "animalWordList"]
+        [randomLetters, wordList],
+        [randomLettersTwo, animalsWordList]
     ];
 
     if (number == 1) {
