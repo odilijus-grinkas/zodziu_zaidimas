@@ -23,6 +23,17 @@ function sprendimas(x, y, direction, word) {
       nodes.push(letterFinder(x + useX * i, y + useY * i));
     } else continue;
   }
+  // Check for mistakes here
+  wrong = true; // use word comparison function
+  if (mistake) {
+    for (let node of nodes) {
+      node.classList.add("wrong");
+    }
+  } else {
+    for (let node of nodes) {
+      node.classList.add("correct");
+    }
+  }
 }
 
 function letterFinder(x, y) {
