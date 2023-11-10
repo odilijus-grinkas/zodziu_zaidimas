@@ -3,6 +3,13 @@
 // list of window elements..
 const windows = document.getElementsByClassName("window");
 
+/**
+ * 
+ * @param {number} x Row_Number
+ * @param {number} y Col_Number
+ * @param {number} direction 1 - Horizontal, 2 - Vertical 3- Diagonal
+ * @param {string} word the word we're guessing
+ */
 function sprendimas(x, y, direction, word) {
   let nodes = [];
   let useX = 0;
@@ -38,8 +45,8 @@ function sprendimas(x, y, direction, word) {
 
 function letterFinder(x, y) {
   // What formatting is used before/after the number?
-  formatX = x + "row";
-  formatY = y + "col";
+  let formatX = x + "row";
+  let formatY = y + "col";
   for (let node of windows) {
     if (node.classList.contains(formatX) && node.classList.contains(formatY)) {
       return node;
@@ -57,3 +64,5 @@ function outOfBounds(x, y, tableSizeX = 10, tableSizeY = 10) {
     return true;
   }
 }
+
+export{sprendimas}
