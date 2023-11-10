@@ -1,0 +1,19 @@
+.lenta{
+    border: 2px solid black;
+    width: fit-content;
+    text-align: center;
+    padding: 2em;
+}
+table{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+tr{
+    border: 2px solid black;
+}
+td{
+    padding: 1.5em;
+    background-color: rgb(155, 246, 216);
+    border: 2px solid black;
+}
