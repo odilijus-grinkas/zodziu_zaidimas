@@ -57,8 +57,8 @@ function connecting(number) {
         randomLetters,wordList
     ];
     const second = [
-        [randomLetters, wordList],
-        [randomLettersTwo, animalsWordList]
+        randomLettersTwo,
+        animalsWordList
     ];
 
     if (number == 1) {
