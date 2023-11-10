@@ -22,20 +22,11 @@ function sprendimas(x, y, direction, word) {
   } else if (direction == 3) {
     // diagonal
     for (let i = 0; i <= word.length - 1; i++) {
-      if (!outOfBounds(x + i, y +i)) {
+      if (!outOfBounds(x + i, y + i)) {
         nodes.push(letterFinder(x + i, y + i));
       } else continue;
     }
   }
-}
-
-function retrieveNodes(x, y, direction, word) {
-
-  for (let i = 0; i <= word.length - 1; i++) {
-    if (!outOfBounds(x + i, y)) {
-      nodes.push(letterFinder(x + i, y));
-    } else continue;
-  } // vertical
 }
 
 function letterFinder(x, y) {
