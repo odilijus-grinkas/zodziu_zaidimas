@@ -30,16 +30,13 @@ function sprendimas(x, y, direction, word) {
       nodes.push(letterFinder(x + useX * i, y + useY * i));
     } else continue;
   }
-  // Check for mistakes here
-  wrong = true; // use word comparison function
-  if (wrong) {
-    for (let node of nodes) {
-      node.classList.add("wrong");
-    }
-  } else {
-    for (let node of nodes) {
-      node.classList.add("correct");
-    }
+  // Check for mistakes here 
+  let className = "wrong"
+  if (!false){// use word comparison function here instead
+    className = "correct"
+  }
+  for (let node of nodes) {
+    node.classList.add(className);
   }
 }
 
