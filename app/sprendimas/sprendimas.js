@@ -4,7 +4,7 @@
 const windows = document.getElementsByClassName("window");
 
 /**
- * 
+ * e.g. sprendimas(1,2,2,"hello")
  * @param {number} x Row_Number
  * @param {number} y Col_Number
  * @param {number} direction 1 - Horizontal, 2 - Vertical 3- Diagonal
@@ -24,6 +24,8 @@ function sprendimas(x, y, direction, word) {
     // diagonal
     useX = 1;
     useY = 1;
+  } else {
+    return alert("Direction valid options: 1, 2, 3.")
   }
   for (let i = 0; i <= word.length - 1; i++) {
     if (!outOfBounds(x + useX * i, y + useY * i)) {
