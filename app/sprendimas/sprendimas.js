@@ -4,15 +4,14 @@
 const windows = document.getElementsByClassName("window");
 
 function sprendimas(x, y, direction, word) {
-  const firstLetter = letterFinder(x, y);
   let nodes = [];
   if (direction == 1) {
     // horizontal
-    for (let i = 1; i <= word.length; i++) {
-      if (!outOfBounds(i, y)) {
-        nodes.push(letterFinder(i,y));
+    for (let i = 0; i <= word.length - 1; i++) {
+      if (!outOfBounds(x + i, y)) {
+        nodes.push(letterFinder(x + i, y));
       } else continue;
-    }
+    } // vertical
   }
 }
 
