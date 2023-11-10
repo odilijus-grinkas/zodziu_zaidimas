@@ -32,7 +32,7 @@ function sprendimas(x, y, direction, word) {
   }
   // Check for mistakes here
   wrong = true; // use word comparison function
-  if (mistake) {
+  if (wrong) {
     for (let node of nodes) {
       node.classList.add("wrong");
     }
