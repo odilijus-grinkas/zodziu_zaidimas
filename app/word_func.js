@@ -5,3 +5,4 @@ function addWords(wordTable, wordArray) {
       i++;
     }
 }
+export{addWords}

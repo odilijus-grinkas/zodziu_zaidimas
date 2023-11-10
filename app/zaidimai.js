@@ -54,8 +54,7 @@ const animalsWordList = [
 
 function connecting(number) {
     const first = [
-        [randomLetters, wordList],
-        [randomLettersTwo, animalsWordList]
+        randomLetters,wordList
     ];
     const second = [
         [randomLetters, wordList],
@@ -68,3 +67,4 @@ function connecting(number) {
         return second
     }
 };
+export{connecting}

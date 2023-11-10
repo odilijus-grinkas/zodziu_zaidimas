@@ -12,3 +12,7 @@ let table = "<table>";
     }
     table += "</table>"
     document.getElementById("lentele").innerHTML = table;
+function test(){
+    document.getElementById("lentele").innerHTML = table; 
+}
+export{table,test}

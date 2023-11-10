@@ -5,3 +5,4 @@ function addLetters(letterArray, letterTable) {
         i++;
     }
 }
+export{addLetters}
