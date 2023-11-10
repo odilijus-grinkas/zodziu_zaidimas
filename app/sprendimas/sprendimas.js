@@ -5,27 +5,23 @@ const windows = document.getElementsByClassName("window");
 
 function sprendimas(x, y, direction, word) {
   let nodes = [];
+  let useX = 0;
+  let useY = 0;
   if (direction == 1) {
     // horizontal
-    for (let i = 0; i <= word.length - 1; i++) {
-      if (!outOfBounds(x, y + i)) {
-        nodes.push(letterFinder(x, y + i));
-      } else continue;
-    }
+    useY = 1;
   } else if (direction == 2) {
     // vertical
-    for (let i = 0; i <= word.length - 1; i++) {
-      if (!outOfBounds(x + i, y)) {
-        nodes.push(letterFinder(x + i, y));
-      } else continue;
-    }
+    useX = 1;
   } else if (direction == 3) {
     // diagonal
-    for (let i = 0; i <= word.length - 1; i++) {
-      if (!outOfBounds(x + i, y + i)) {
-        nodes.push(letterFinder(x + i, y + i));
-      } else continue;
-    }
+    useX = 1;
+    useY = 1;
+  }
+  for (let i = 0; i <= word.length - 1; i++) {
+    if (!outOfBounds(x + useX * i, y + useY * i)) {
+      nodes.push(letterFinder(x + useX * i, y + useY * i));
+    } else continue;
   }
 }
 
