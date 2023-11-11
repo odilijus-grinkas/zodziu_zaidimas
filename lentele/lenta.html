@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenta</title>
+    <link rel="stylesheet" href="/zodziu_zaidimas/css/lenta.css">
+</head>
+<body>
+    <div class="lenta">
+        <h1>WORD SEARCH</h1>
+        <div id="lentele"></div>
+        <div class="wordlist">
+            <h1>WORD LIST</h1>
+            <p>Word</p>
+            <p>Word</p>
+            <p>Word</p>
+            <p>Word</p>
+            <p>Word</p>
+        </div>
+    </div>
+    <script>
+    let table = "<table>";
+   // const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+   // const randomLetter = alphabet[Math. floor(Math. random() * alphabet. length)]
+    for(let i = 1; i <= 10; i++){
+        if(i % 10 === 0){
+            table += "<tr>";
+        }
+    for(let j = 1; j <= 10; j++){
+        table += "<td class=\"window\"></td>";
+        if(j % 10 === 0){
+            table += "</tr>";
+        }
+    }
+    }
+    table += "</table>"
+    document.getElementById("lentele").innerHTML = table;
+    </script>
+</body>
+</html>
