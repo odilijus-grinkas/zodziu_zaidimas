@@ -40,11 +40,11 @@ const randomLettersTwo = [
 
 // Word List
 const animalsWordList = [
-    "Penguin",
-    "Goat",
-    "Panda",
-    "Giraffe",
-    "Lion"
+    "PENGUIN",
+    "GOAT",
+    "PANDA",
+    "GIRAFFE",
+    "LION"
 ];
 
 
