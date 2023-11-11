@@ -1,7 +1,7 @@
 function board_generation(){
     let table = "<table>";
-    const row = ["x1", "x2", "x3", "x4", "x5", "x6", "x7", "x8", "x9", "x10"];
-    const col = ["y1", "y2", "y3", "y4", "y5", "y6", "y7", "y8", "y9", "y10"];
+    const col = ["x1", "x2", "x3", "x4", "x5", "x6", "x7", "x8", "x9", "x10"];
+    const row = ["y1", "y2", "y3", "y4", "y5", "y6", "y7", "y8", "y9", "y10"];
 for(let i = 1; i <= 10; i++){
     if(i % 10 === 0){
         table += "<tr>";
@@ -16,5 +16,4 @@ for(let j = 1; j <= 10; j++){
 table += "</table>";
 return table;
 }
-document.getElementById("lentele").innerHTML = board_generation();
-export{table,test}
+export {board_generation}
