@@ -12,4 +12,4 @@ let letters = connecting(1)[0];
 let words = connecting(1)[1]
 addLetters(letters,document.getElementsByClassName("window"))
 addWords(document.getElementsByClassName("given_word"),words)
-// sprendimas(1,1,1,"Happy");
+sprendimas(3,3,3,"Happy");
