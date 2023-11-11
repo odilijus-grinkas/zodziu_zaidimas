@@ -25,20 +25,21 @@ function sprendimas(x, y, direction, word) {
     useX = 1;
     useY = 1;
   } else {
-    return alert("Direction valid options: 1, 2, 3.")
+    return alert("Direction valid options: 1, 2, 3.");
   }
   for (let i = 0; i <= word.length - 1; i++) {
     if (!outOfBounds(x + useX * i, y + useY * i)) {
       nodes.push(letterFinder(x + useX * i, y + useY * i));
     } else continue;
   }
-  addClasses(nodes,true) // use word comparison function here instead
+  addClasses(nodes, true); // use word comparison function here instead
 }
 
-function addClasses(nodes,mistake=true){
-  let className = "wrong"
-  if (!mistake){// use word comparison function here instead
-    className = "correct"
+function addClasses(nodes, mistake = true) {
+  let className = "wrong";
+  if (!mistake) {
+    // use word comparison function here instead
+    className = "correct";
   }
   for (let node of nodes) {
     node.classList.add(className);
@@ -47,8 +48,8 @@ function addClasses(nodes,mistake=true){
 
 function letterFinder(x, y) {
   // What formatting is used before/after the number?
-  let formatX = x + "row";
-  let formatY = y + "col";
+  let formatX = "x" + x;
+  let formatY = "y" + y;
   for (let node of windows) {
     if (node.classList.contains(formatX) && node.classList.contains(formatY)) {
       return node;
@@ -67,4 +68,4 @@ function outOfBounds(x, y, tableSizeX = 10, tableSizeY = 10) {
   }
 }
 
-export{sprendimas}
+export { sprendimas };
