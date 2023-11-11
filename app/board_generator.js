@@ -9,7 +9,7 @@ let table = "<table>";
             table += "</tr>";
         }
     }
-    }
+    } // T
     table += "</table>"
     document.getElementById("lentele").innerHTML = table;
 function test(){
