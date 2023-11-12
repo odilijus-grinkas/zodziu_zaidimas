@@ -21,3 +21,11 @@ const wordList = [
     "WATER",
     "SHEEP"
 ];
+
+function firstGame() {
+    const option = [
+        randomLetters,
+        wordList
+    ];
+    return firstGame();
+};

@@ -27,21 +27,10 @@ const animalsWordList = [
 // viena array su funckiju names 
 // if else if + skaiciai 1-game one, 2-game two
 
-function connecting(number) {
-    const first = [
-        randomLetters, wordList
-    ];
-    const second = [
+function secondGame() {
+    const options = [
         randomLettersTwo,
         animalsWordList
     ];
-
-    if (number == 1) {
-        return first
-    } else if (number == 2) {
-        return second
-    }
+    return secondGame();
 };
-export {
-    connecting
-}
