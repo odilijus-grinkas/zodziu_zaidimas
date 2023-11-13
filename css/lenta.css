@@ -54,7 +54,9 @@ body{
     background-size: cover;
 }
 .given_words{
+    width: 10em;
     color: white;
+    background-color: rgba(0, 0, 0, 0.593);
     font-size: 2em;
     text-shadow: 1px 1px 2px black;
 }
