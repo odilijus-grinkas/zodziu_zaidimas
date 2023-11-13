@@ -32,5 +32,7 @@ function secondGame() {
         randomLettersTwo,
         animalsWordList
     ];
-    return secondGame();
+    return options;
 };
+export{secondGame};
+

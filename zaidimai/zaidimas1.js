@@ -27,5 +27,6 @@ function firstGame() {
         randomLetters,
         wordList
     ];
-    return firstGame();
+    return option;
 };
+export{firstGame};
