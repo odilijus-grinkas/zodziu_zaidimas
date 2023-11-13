@@ -3,7 +3,7 @@
 import { sprendimas } from "./sprendimas/sprendimas.js";
 import { addLetters } from "./add_letters.js"
 import { connecting } from "./zaidimai.js"
-import { addWords } from "./word_func.js";
+import { addWords } from "./add_words.js";
 import { board_generation } from "./board_generator.js";
 // Make table
 document.getElementById("lentele").innerHTML = board_generation();
