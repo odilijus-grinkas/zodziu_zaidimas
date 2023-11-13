@@ -3,7 +3,7 @@
 import{table,test} from "./board_generator.js"
 import { addLetters } from "./add_letters.js"
 import { connecting } from "./zaidimai.js"
-import { addWords } from "./word_func.js";
+import { addWords } from "./add_words.js";
 // document.getElementById("test").innerHTML = table;
 // let array = connecting(1);
 test();
