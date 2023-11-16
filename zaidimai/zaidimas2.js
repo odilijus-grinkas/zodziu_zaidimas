@@ -1,16 +1,16 @@
 // Word Search Game 2
 // Random letters 10x10 + Hidden Words
 const randomLettersTwo = [
-    "G", "P", "E", "K", "L", "J", "N", "G", "G", "K",
-    "R", "S", "A", "E", "Z", "I", "R", "I", "W", "O",
-    "W", "D", "P", "N", "U", "N", "R", "R", "N", "Z",
-    "U", "X", "N", "G", "D", "P", "O", "A", "P", "W",
-    "H", "U", "N", "H", "S", "A", "W", "F", "T", "S",
-    "E", "E", "Y", "A", "I", "N", "Y", "F", "F", "G",
-    "P", "F", "K", "B", "U", "L", "C", "E", "C", "Q",
-    "G", "O", "A", "T", "I", "K", "D", "G", "W", "A",
-    "B", "P", "J", "O", "I", "K", "O", "E", "E", "Z",
-    "Q", "Q", "N", "B", "X", "I", "A", "R", "T", "N"
+    "G", "X", "X", "I", "U", "G", "L", "W", "C", "N",
+    "J", "I", "G", "E", "A", "B", "Z", "U", "O", "I",
+    "F", "K", "R", "O", "L", "D", "F", "I", "Q", "U",
+    "Y", "Z", "F", "A", "A", "Y", "L", "E", "Y", "G",
+    "D", "G", "G", "E", "F", "T", "L", "F", "B", "N",
+    "E", "J", "H", "T", "G", "F", "L", "H", "X", "E",
+    "J", "G", "Q", "O", "E", "Z", "E", "L", "N", "P",
+    "V", "K", "T", "E", "H", "L", "J", "I", "R", "J",
+    "V", "P", "A", "N", "D", "A", "W", "O", "S", "A",
+    "H", "Y", "S", "J", "V", "R", "R", "N", "C", "G"
 ];
 
 // Word List
@@ -34,5 +34,6 @@ function secondGame() {
     ];
     return options;
 };
-export{secondGame};
-
+export {
+    secondGame
+};
