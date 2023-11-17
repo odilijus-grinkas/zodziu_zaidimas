@@ -28,12 +28,9 @@ const animalsWordList = [
 // if else if + skaiciai 1-game one, 2-game two
 
 function secondGame() {
-    const options = [
-        randomLettersTwo,
-        animalsWordList
-    ];
-    return options;
+    return randomLettersTwo;
 };
-export {
-    secondGame
-};
+function secondGameSolutions(){
+    return animalsWordList;
+}
+export {secondGame, secondGameSolutions};
