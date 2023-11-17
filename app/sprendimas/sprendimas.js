@@ -1,5 +1,4 @@
-// imports
-
+import { compareWords } from "./sprendimasCompare.js";
 // list of window elements..
 const windows = document.getElementsByClassName("window");
 
@@ -10,7 +9,7 @@ const windows = document.getElementsByClassName("window");
  * @param {number} direction 1 - Horizontal, 2 - Vertical 3- Diagonal
  * @param {string} word the word we're guessing
  */
-function sprendimas(x, y, direction, word) {
+function sprendimas(x, y, direction, word, wordSolutions) {
   let nodes = [];
   let useX = 0;
   let useY = 0;
@@ -32,13 +31,12 @@ function sprendimas(x, y, direction, word) {
       nodes.push(letterFinder(x + useX * i, y + useY * i));
     } else continue;
   }
-  addClasses(nodes, true); // use word comparison function here instead
+  addClasses(nodes, compareWords(nodes,wordSolutions));
 }
 
 function addClasses(nodes, mistake = true) {
   let className = "wrong";
   if (!mistake) {
-    // use word comparison function here instead
     className = "correct";
   }
   for (let node of nodes) {

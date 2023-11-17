@@ -16,4 +16,6 @@ let words = firstGame()[1]
 addLetters(letters,document.getElementsByClassName("window"))
 addWords(document.getElementsByClassName("given_word"),words)
 // Play Game
-sprendimas(3,3,2,"Happy");
+sprendimas(5,3,1,"Tree",firstGame()[1]);
+sprendimas(4,3,3,"Hello",firstGame()[1]);
+sprendimas(1,6,2,"Sheep",firstGame()[1]);

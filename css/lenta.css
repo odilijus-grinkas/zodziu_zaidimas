@@ -39,8 +39,6 @@ body{
 }
 .correct{
     background-color: green;
-    background-color: rgba(238, 193, 216, 0.9);
-    border: 2px solid rgb(177, 156, 217);
 }
 .lentele{
     margin-top: 2%;
