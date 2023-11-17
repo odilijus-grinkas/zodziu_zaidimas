@@ -8,6 +8,7 @@ const windows = document.getElementsByClassName("window");
  * @param {number} y Col_Number
  * @param {number} direction 1 - Horizontal, 2 - Vertical 3- Diagonal
  * @param {string} word the word we're guessing
+ * @param {Array} wordSolutions array of words that we're looking for
  */
 function sprendimas(x, y, direction, word, wordSolutions) {
   let nodes = [];
